@@ -4,7 +4,21 @@ public class ClassA {
 	
 	public int Salary;
 	public String Name;
-	public String OrgName;
+	protected String OrgName;
+	
+	public ClassA() {
+		
+		System.out.println("Inside Constructor");
+	}
+	
+	public ClassA(int val1,String val2, String val3) {
+		
+		System.out.println("Inside parametric Constructor");
+		
+		Salary = val1;
+		Name = val2;
+		OrgName= val3;
+	}
 	
 	public void Display (){
 		
